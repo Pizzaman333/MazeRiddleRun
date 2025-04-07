@@ -1,1 +1,1 @@
-# practice-ridle-maze-run
+# MazerRiddleRun
