@@ -1,0 +1,71 @@
+.header {
+  height: 110px;
+  background-color: $bg-color;
+
+  &__container {
+    height: 100%;
+    @include flexbox;
+    justify-content: space-around;
+  }
+
+  &__image {
+    width: auto;
+    height: 100px;
+  }
+
+  &__list {
+    @include flexbox;
+    gap: 50px;
+  }
+
+  &__link {
+    color: $text-color;
+    font-size: 32px;
+    transition: color $st-animation;
+    @include flexbox;
+    flex-direction: column;
+
+    &:after {
+      margin-top: 2px;
+      display: block;
+      content: "";
+      width: 110%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $highlight-color;
+      opacity: 0;
+      transition: opacity $st-animation;
+    }
+
+    &:hover {
+      color: rgb(194, 194, 194);
+    }
+  }
+
+  &__item:first-child &__link:after {
+    opacity: 1;
+  }
+
+  &__item:nth-child(2):hover &__link:after {
+    opacity: 1;
+  }
+
+  &__item:last-child:hover &__link:after {
+    opacity: 1;
+  }
+
+  &__button {
+    background-color: $highlight-color;
+    color: $text-color;
+    font-size: 22px;
+    width: 210px;
+    height: 45px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color $st-animation;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+}

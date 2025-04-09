@@ -1,0 +1,10 @@
+.style {
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__image {
+    width: 1000px;
+  }
+}

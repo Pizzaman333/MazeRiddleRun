@@ -1,0 +1,29 @@
+.details {
+  background-color: $highlight-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: $bg-color;
+  }
+
+  &__item {
+    @include flexbox;
+    justify-content: space-around;
+  }
+
+  &__text {
+    color: $text-color;
+    max-width: 650px;
+    font-size: 24px;
+  }
+
+  &__image {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+  }
+}

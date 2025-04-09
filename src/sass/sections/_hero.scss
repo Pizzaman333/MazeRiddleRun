@@ -1,0 +1,22 @@
+.hero {
+  height: 600px;
+  background-image: url(./image/savage-bg.png);
+  background-size: cover;
+
+  &__container {
+    @include flexbox;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: 148px;
+    color: $bg-color;
+  }
+
+  &__describtion {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+}
