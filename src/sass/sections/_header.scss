@@ -8,9 +8,16 @@
     justify-content: space-around;
   }
 
-  &__image {
+  &__logo {
     width: auto;
-    height: 100px;
+    height: 90px;
+    fill: $highlight-color;
+    @include flexbox;
+    transition: fill $st-animation;
+
+    &:hover {
+    fill: $hover-color-btn;
+    }
   }
 
   &__list {
@@ -38,7 +45,7 @@
     }
 
     &:hover {
-      color: rgb(194, 194, 194);
+      color: $hover-color;
     }
   }
 
@@ -62,10 +69,24 @@
     height: 45px;
     border-radius: 15px;
     cursor: pointer;
-    transition: background-color $st-animation;
+    transition: background-color, color $st-animation;
+    @include flexbox;
+    gap: 15px; 
 
     &:hover {
-      background-color: $hover-color;
+      background-color: $hover-color-btn;
+      color: $hover-color;
     }
+  }
+
+  &__icon {
+    fill: $text-color;
+    width: 25px;
+    height: 25px;
+    transition: fill $st-animation;
+  }
+
+  &__button:hover &__icon {
+    fill: $hover-color;
   }
 }

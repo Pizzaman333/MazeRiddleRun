@@ -1,7 +1,8 @@
 .hero {
   height: 600px;
-  background-image: url(./image/savage-bg.png);
+  background-image: url(./images/hero-bg2.jpg);
   background-size: cover;
+  background-position: center;
 
   &__container {
     @include flexbox;
@@ -11,12 +12,14 @@
   }
 
   &__title {
-    font-size: 148px;
-    color: $bg-color;
+    font-size: 118px;
+    color: $text-color;
+    text-align: center;
   }
 
   &__describtion {
     margin-top: 20px;
     font-size: 32px;
+    color: $text-color;
   }
 }

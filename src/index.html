@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./image/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.png" />
     <title>Maze Riddle Run</title>
     <link
       rel="stylesheet"
@@ -12,13 +12,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./index.scss" />
   </head>
   <body>
     <header id="header" class="header">
       <div class="container header__container">
         <a href="index.html">
-          <img class="header__image" src="./image/logo-mid.png" alt="Logo" />
+          <svg class="header__logo">
+            <use href="./images/symbol-defs.svg#icon-logo-mid"></use>
+          </svg>
         </a>
         <ul class="header__list">
           <li class="header__item"><a href="" class="header__link">Home</a></li>
@@ -29,13 +37,21 @@
             <a href="" class="header__link">About</a>
           </li>
         </ul>
-        <button class="header__button" type="button">Download</button>
+        <button class="header__button" type="button">
+          Download<svg class="header__icon">
+            <use
+              href="./images/symbol-defs.svg#icon-download"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <section class="hero">
       <div class="container hero__container">
-        <h1 class="hero__title">It's is a game!</h1>
-        <p class="hero__describtion">Fantatic!</p>
+        <h1 class="hero__title">Step into the maze. Your riddle avaits!</h1>
+        <p class="hero__describtion">
+          Navigate intricate paths and outsmart challenges.
+        </p>
       </div>
     </section>
     <section class="details">
@@ -75,7 +91,13 @@
       </div>
     </section>
     <section class="style">
-      <img class="style__image" src="./image/logo-mid.png" alt="logo" />
+      <svg class="style__icon">
+        <use
+          width="1000px"
+          height="400px"
+          href="./images/symbol-defs.svg#icon-logo-mid"
+        ></use>
+      </svg>
     </section>
 
     <script type="module" src="./main.js"></script>
