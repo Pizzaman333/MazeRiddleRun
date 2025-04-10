@@ -24,7 +24,10 @@
     <header id="header" class="header">
       <div class="container header__container">
         <a href="index.html">
-          <img class="header__logo" src="./images/logo-mid.svg" alt="">
+          <!-- <img class="header__logo" src="./images/logo-mid.svg" alt=""> -->
+          <svg class="header__logo">
+            <use href="/src/symbol-defs.svg#icon-logo-mid"></use>
+          </svg>
         </a>
         <ul class="header__list">
           <li class="header__item"><a href="" class="header__link">Home</a></li>
@@ -36,7 +39,7 @@
           </li>
         </ul>
         <button class="header__button" type="button">
-          <img class="header__icon" src="./images/download.svg" alt="">
+          <img class="header__icon" src="./images/download.svg" alt="" />
           Download
         </button>
       </div>
@@ -86,7 +89,7 @@
       </div>
     </section>
     <section class="style">
-      <img class="style__icon" src="./images/logo-mid.png" alt="">
+      <img class="style__icon" src="./images/logo-mid.png" alt="" />
     </section>
 
     <script type="module" src="./main.js"></script>
