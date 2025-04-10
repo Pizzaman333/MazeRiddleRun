@@ -1,2 +1,2 @@
-import "./images/symbols-defs.svg";
+import "./images/symbol-defs.svg";
 console.log("Stillllllllll nothing");
