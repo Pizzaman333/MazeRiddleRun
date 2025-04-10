@@ -59,6 +59,7 @@ body {
 }
 
 .header__logo {
+  fill: #da291c;
   width: auto;
   height: 90px;
 }
