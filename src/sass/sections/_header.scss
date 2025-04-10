@@ -11,13 +11,6 @@
   &__logo {
     width: auto;
     height: 90px;
-    fill: $highlight-color;
-    @include flexbox;
-    transition: fill $st-animation;
-
-    &:hover {
-    fill: $hover-color-btn;
-    }
   }
 
   &__list {
