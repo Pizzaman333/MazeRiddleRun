@@ -12,6 +12,12 @@
     width: auto;
     height: 90px;
     fill: $highlight-color;
+    transition: fill $st-animation;
+    @include flexbox;
+
+    &:hover {
+      fill: $hover-color-btn;
+    }
   }
 
   &__list {
@@ -78,6 +84,10 @@
     width: 25px;
     height: 25px;
     transition: fill $st-animation;
+
+    &:hover {
+      fill: $hover-color;
+    }
   }
 
   &__button:hover &__icon {
