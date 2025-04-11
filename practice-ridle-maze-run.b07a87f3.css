@@ -46,6 +46,10 @@ body {
   font-family: Noto Serif, serif;
 }
 
+.specialbg {
+  background: radial-gradient(circle at 0 0, #e8564b 0%, #0000 38%), radial-gradient(circle at 100% 0, #e8564b 0%, #0000 38%), linear-gradient(#da291c 10%, #101820 80%);
+}
+
 .header {
   background-color: #101820;
   height: 110px;
@@ -73,7 +77,7 @@ body {
   fill: #aa2319;
 }
 
-.header__list {
+.header__nav {
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -106,7 +110,7 @@ body {
   color: #999;
 }
 
-.header__item:first-child .header__link:after, .header__item:nth-child(2):hover .header__link:after, .header__item:last-child:hover .header__link:after {
+.header__link__current:after, .header__link:first-child:hover:after, .header__link:nth-child(2):hover:after, .header__link:nth-child(3):hover:after, .header__link:last-child:hover:after {
   opacity: 1;
 }
 
@@ -114,26 +118,28 @@ body {
   color: #fff;
   cursor: pointer;
   background-color: #da291c;
-  border-radius: 15px;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 13px;
   width: 200px;
   height: 40px;
-  font-size: 22px;
-  transition: background-color, color .25s cubic-bezier(.4, 0, .2, 1);
+  font-size: 20px;
+  transition: background-color, color, box-shadow, all .25s cubic-bezier(.4, 0, .2, 1);
   display: flex;
+  box-shadow: 0 4px 10px #0003;
 }
 
 .header__button:hover {
   color: #999;
   background-color: #aa2319;
+  box-shadow: 0 6px 14px #0000004d;
 }
 
 .header__icon {
   fill: #fff;
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
   transition: fill .25s cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -213,8 +219,7 @@ body {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  width: 1000px;
-  height: 400px;
+  height: 700px;
   transition: fill .25s cubic-bezier(.4, 0, .2, 1);
   display: flex;
 }
@@ -222,4 +227,4 @@ body {
 .style__icon:hover {
   fill: #aa2319;
 }
-/*# sourceMappingURL=practice-ridle-maze-run.ce1d6491.css.map */
+/*# sourceMappingURL=practice-ridle-maze-run.b07a87f3.css.map */
