@@ -46,6 +46,18 @@ body {
   font-family: Noto Serif, serif;
 }
 
+#index footer {
+  background-color: #101820;
+}
+
+.temporary__circle {
+  background-color: #da291c;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  margin: 10% auto 0;
+}
+
 .specialbg {
   background: radial-gradient(circle at 0 0, #e8564b 0%, #0000 38%), radial-gradient(circle at 100% 0, #e8564b 0%, #0000 38%), linear-gradient(#da291c 10%, #101820 80%);
 }
@@ -148,7 +160,7 @@ body {
 }
 
 .feedback {
-  padding: 70px 0;
+  padding: 120px 0;
 }
 
 .feedback__title {
@@ -176,7 +188,12 @@ body {
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 18px;
-  transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
+  transition: background-color, color, box-shadow, all .25s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0 4px 10px #0003;
+}
+
+.feedback__input:hover, .feedback__textarea:hover {
+  box-shadow: 0 6px 14px #0000004d;
 }
 
 .feedback__input:focus, .feedback__textarea:focus {
