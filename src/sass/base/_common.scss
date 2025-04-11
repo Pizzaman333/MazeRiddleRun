@@ -2,3 +2,9 @@ body {
     font-family: "Noto Serif", serif;
     // font-family: "Saira Stencil One", sans-serif;
 }
+
+.specialbg {
+    background: 
+radial-gradient(circle at top left, lighten($highlight-color, 12%) 0%, transparent 38%), radial-gradient(circle at top right, lighten($highlight-color, 12%) 0%, transparent 38%),
+linear-gradient(180deg, $highlight-color 10%, $bg-color 80%);
+}

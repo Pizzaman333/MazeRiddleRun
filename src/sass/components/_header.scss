@@ -6,6 +6,7 @@
     height: 100%;
     @include flexbox;
     justify-content: space-around;
+    gap: 30px;
   }
 
   &__logo {
@@ -20,14 +21,14 @@
     }
   }
 
-  &__list {
+  &__nav {
     @include flexbox;
-    gap: 50px;
+    gap: 30px;
   }
 
   &__link {
     color: $text-color;
-    font-size: 32px;
+    font-size: 28px;
     transition: color $st-animation;
     @include flexbox;
     flex-direction: column;
@@ -47,42 +48,53 @@
     &:hover {
       color: $hover-color;
     }
-  }
 
-  &__item:first-child &__link:after {
+    &__current:after {
     opacity: 1;
-  }
+    }
 
-  &__item:nth-child(2):hover &__link:after {
-    opacity: 1;
-  }
-
-  &__item:last-child:hover &__link:after {
-    opacity: 1;
+    &:first-child:hover:after {
+      opacity: 1;
+    }
+  
+    &:nth-child(2):hover:after {
+      opacity: 1;
+    }
+  
+    &:nth-child(3):hover:after {
+      opacity: 1;
+    }
+  
+    &:last-child:hover:after {
+      opacity: 1;
+    }
   }
 
   &__button {
     background-color: $highlight-color;
     color: $text-color;
-    font-size: 22px;
-    width: 210px;
-    height: 45px;
-    border-radius: 15px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color, color $st-animation;
     @include flexbox;
-    gap: 15px; 
+    gap: 13px; 
+    transition: background-color, color, box-shadow, $st-animation;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
     &:hover {
       background-color: $hover-color-btn;
-      color: $hover-color;
+    color: $hover-color;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
     }
   }
 
   &__icon {
     fill: $text-color;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     transition: fill $st-animation;
 
     &:hover {
