@@ -1,1 +1,0 @@
-{"mappings":"ACCA,QAAQ,GAAG,CAAC","sources":["<anon>","src/main.js"],"sourcesContent":["\nconsole.log(\"Stillllllllll nothing\");\n\n\n//# sourceMappingURL=practice-ridle-maze-run.fbb77629.js.map\n","import \"./images/symbol-defs.svg\";\r\nconsole.log(\"Stillllllllll nothing\");\r\n"],"names":["console","log"],"version":3,"file":"practice-ridle-maze-run.fbb77629.js.map"}
